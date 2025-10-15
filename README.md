@@ -13,6 +13,24 @@ WAR file	A packaged web app (like a zip file) containing your Java code, HTML, J
 Tomcat	A web server (Servlet container) that knows how to read WAR files and run them.
 webapps folder	The place where Tomcat looks for WAR files to automatically deploy.###
 
+#### Flow — What happens step by step
+
+You build your Java web app → it becomes myapp.war.
+(like putting all ingredients into a lunch box 🍱)
+
+You place the myapp.war into Tomcat’s /webapps folder.
+(like putting your lunch box into a microwave 🍽️)
+
+Tomcat automatically unpacks it → creates a folder /webapps/myapp.
+(microwave opens your lunch box and heats the food 🔥)
+
+Tomcat runs the servlets/JSPs inside that WAR → now you can access it at
+http://localhost:8080/myapp/
+(you can “taste” your app in the browser 🍲)
+
+
+
+
 #### What is Apache Tomcat?
 
 Apache Tomcat is an open-source web server and servlet container developed by the Apache Software Foundation. It is primarily used to deploy Java Servlets, JavaServer Pages (JSP), and WebSocket applications. Tomcat provides a "pure Java" HTTP web server environment in which Java code can run, making it an ideal choice for Java-based web applications.
@@ -212,5 +230,6 @@ These commands will control the Tomcat server's operation.
 ## License
 
 This project is licensed under the Apache License, Version 2.0. See the [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) file for more details.
+
 
 
